@@ -102,8 +102,7 @@ rl.question('Enter new server value: ', (server) => {
 
         // Create a unique output file name based on servername and name
         const servername = config.proxies[0].server || 'unknown';
-        const name = config.proxies[0].name || 'unknown';
-        const outputFileName = `${servername}_${name}_${uniqueName}.yaml`;
+        const outputFileName = `${servername}_${uniqueName}.yaml`;
 
         // Save the updated config to the new YAML file
         const yamlOptions = { noQuotes: true }; // Prevent quotes around values
